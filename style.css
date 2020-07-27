@@ -1,0 +1,312 @@
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 2px solid red; */
+}
+
+body
+{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  color: #2b2d42;
+}
+
+h1, h2, h3
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+h2, h3
+{
+  font-style: normal;
+}
+
+h3
+{
+  letter-spacing: normal;
+  margin-bottom: 1rem;
+}
+
+h2
+{
+  margin-bottom: 1rem;
+}
+
+h1
+{
+  margin-bottom: 0.4rem;
+  color: #011627;
+}
+
+p
+{
+  padding: 0.4rem;
+  letter-spacing: 0.07em;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+
+/* left-bar  */
+
+.left-bar
+{
+  color: white;
+  background-color: #1a535c;
+  width: 25%;
+  overflow: auto;
+}
+
+.left-bar .blocks
+{
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+}
+
+.left-bar h3
+{
+  border-bottom: 2px solid white;
+  padding-bottom: 0.4rem;
+  width: 90%;
+}
+
+.left-bar h3
+{
+  font-size: 1.3rem;
+}
+
+/* left-bar personal-details */
+
+img
+{
+  display: block;
+  width: 200px;
+  height: auto;
+  border-radius: 100%;
+  margin: 0rem auto 3rem;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+
+/* left-bar personal-details details */
+
+.details p
+{
+  display: flex;
+}
+
+.icon
+{
+  flex-basis: 10%;
+  font-size: 1.2rem;
+  color: #83c5be;
+  padding: 0rem 0.3rem;
+  padding-right: 1rem;
+}
+
+.name
+{
+  color: white;
+  padding: 0rem 0rem 0.3rem 0.3rem;
+}
+
+.linkedin .icon
+{
+  padding-top: 0.4rem;
+}
+
+.details p:hover .icon
+{
+
+  text-shadow: 0px 0px 10px #ced4da;
+  transition: 0.5s ease;
+}
+
+.details p:hover .name
+{
+  padding-left: 0.7rem;
+  transition: 0.5s ease;
+}
+
+
+/* left-bar interests */
+/* left-bar languages */
+
+
+/* main-block */
+
+.main-block
+{
+  width: 75%;
+}
+
+.main-block .blocks
+{
+  margin: 2rem 6rem;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 8px;
+
+}
+
+
+
+/* main-block intro */
+
+.intro
+{
+  padding: 2rem;
+}
+
+.intro h3
+{
+  font-weight: 500;
+}
+
+.intro p
+{
+  margin-top: 1.3rem;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+/* main-block prof-Skills */
+
+.prof-skills a
+{
+  color: #2a9d8f;
+  font-weight: bold;
+  margin-left: 0.6rem;
+}
+
+.prof-skills a:hover
+{
+  border-bottom: 1.2px solid #2a9d8f;
+}
+
+.prof-skills h2
+{
+  margin-bottom: 1.7rem;
+}
+
+.prof-skills h3
+{
+  margin-bottom: 0.7rem;
+  padding-left: 1.4rem;
+}
+
+.pl
+{
+  margin-bottom: 1rem;
+}
+
+.pl p, .others p
+{
+  padding-left: 2.5rem;
+}
+
+/* main-block work-exp  */
+/* main-block edu-quali  */
+
+
+.engi, .inter, .school
+{
+  margin: 1rem auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #a2a4c3;
+  width: 90%;
+}
+
+.engi
+{
+  margin-top: 2rem;
+}
+
+.school
+{
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* main-block skills  */
+
+.skills p
+{
+  padding-left: 1.4rem;
+}
+
+/* main-block my-projects */
+
+.my-projects h2
+{
+  margin-bottom: 2rem;
+}
+
+.project
+{
+  margin-bottom: 1.7rem;
+  padding-left: 1.4rem;
+}
+
+.colorGen
+{
+  margin-bottom: 0;
+}
+
+.project p
+{
+  line-height: 1.6em;
+}
+
+.project h3
+{
+  margin-bottom: 0.3rem;
+}
+
+.project a
+{
+  color: #2a9d8f;
+}
+
+.project a:hover
+{
+  border-bottom: 1.4px solid #2a9d8f;
+}
+
+
+/* Media Quries  */
+
+@media screen and (max-width: 1120px)
+{
+  .details a, .details span, .details h2
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  body
+  {
+    display: block;
+  }
+
+  .left-bar, .main-block
+  {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+  }
+
+}
