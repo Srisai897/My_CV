@@ -421,11 +421,12 @@ img
   color: #2a9d8f;
   font-weight: bold;
   margin-left: 0.6rem;
+  border-bottom: 1.4px solid #2a9d8f;
 }
 
 .prof-skills a:hover
 {
-  border-bottom: 1.2px solid #2a9d8f;
+  border-bottom: 0;
 }
 
 .prof-skills h3
@@ -490,11 +491,6 @@ img
 
 /* main-block my-projects */
 
-.my-projects h2
-{
-  margin-bottom: 2rem;
-}
-
 .project
 {
   margin-bottom: 1.7rem;
@@ -519,11 +515,12 @@ img
 .project a
 {
   color: #2a9d8f;
+  border-bottom: 1.4px solid #2a9d8f;
 }
 
 .project a:hover
 {
-  border-bottom: 1.4px solid #2a9d8f;
+  border-bottom:  0;
 }
 
 
