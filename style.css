@@ -12,33 +12,23 @@ body
   margin: 0;
 }
 
-h1, h2, h3
+h1, h3
 {
   font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  letter-spacing: 0.1em;
-}
-
-h2, h3
-{
-  font-style: normal;
-}
-
-h3
-{
-  letter-spacing: normal;
-  margin-bottom: 1rem;
-}
-
-h2
-{
-  margin-bottom: 1.5rem;
 }
 
 h1
 {
   margin-bottom: 0.4rem;
   color: #011627;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+h3
+{
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
 }
 
 p
@@ -50,6 +40,7 @@ p
 a
 {
   text-decoration: none;
+  outline: 0;
 }
 
 
@@ -57,38 +48,45 @@ a
 
 .left-bar
 {
-  color: white;
   background-color: #1a535c;
   width: 32%;
 }
 
 .left-bar .blocks
 {
-  margin: 8rem 1rem;
-  padding: 2rem;
+  width: 70%;
+  padding: 2.5rem;
+  margin: 8.3rem auto;
+  text-align: center;
+  border: 10px double white;
+  transition: 0.5s ease;
+}
+
+.left-bar .blocks:hover
+{
+    box-shadow: 0px 0px 25px 0px #fefae0;
+    transition: 0.5s ease;
 }
 
 .left-bar h3
 {
-  border-bottom: 1.6px solid white;
-  padding-bottom: 0.6rem;
-  width: 90%;
-  font-size: 1.4rem;
-  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  color: #1a535c;
+  background-color: white;
+  border-radius: 100%;
+  margin: 2rem;
+  margin-top: 1rem;
+  transition: 0.5s ease;
 }
 
 .left-bar p
 {
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 /* left-bar personal-details */
-
-.personal-details
-{
-  margin: 4rem auto;
-  padding: 3rem;
-}
 
 img
 {
@@ -96,7 +94,7 @@ img
   width: 225px;
   height: auto;
   border-radius: 100%;
-  margin: 0 auto 3rem;
+  margin: 1.5rem auto 2.5rem;
   padding: 0.5rem;
   box-shadow: 0px 0px 10px 0px black;
 }
@@ -122,29 +120,45 @@ img
       .a
       {
         display: none;
-        padding: 3rem;
+        width: 90%;
+        height: 20rem;
+        margin: 0rem auto 7%;
+        padding: 5% 10%;
         position: relative;
-        width: 30rem;
-        height: 30rem;
         justify-content: center;
         align-items: center;
-        border: 1px solid white;
         border-left: 10px solid white;
+      }
+
+      .a .header h3
+      {
+        font-size: 1rem;
+        background-color: transparent;
+        color: white;
+        margin: 0;
+      }
+
+      .a .header p
+      {
+        padding: 2.5% 0.5%;
       }
 
       .a h1
       {
         color: #4acfbf;
+        margin: 0;
       }
 
       .b:hover .c
       {
         width: 100%;
         transition: 1.5s ease;
+        border: 1.5px solid white;
       }
 
       .c
       {
+        width: 90%;
         display: flex;
         position: absolute;
         width: 0;
@@ -152,25 +166,22 @@ img
         bottom: 0;
         left: 0;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         transition: 1.5s ease;
         text-align: center;
         white-space: nowrap;
         background-color: #1a535c;
       }
 
-      /* .interests1
+      .c h3
       {
-        border-right: 2px solid #a2a4c3;
-        padding-right: 3rem;
+        font-size: 1rem;
       }
 
-      .languages1
+      .c p
       {
-        padding-left: 3rem;
-      } */
-
-
+        font-size: 12px;
+      }
 
       .slider-icon
       {
@@ -199,17 +210,17 @@ img
 
 .icon
 {
-  flex-basis: 10%;
+  flex-basis: 15%;
   font-size: 1.2rem;
   color: #83c5be;
-  padding: 0rem 0.3rem;
-  padding-right: 1rem;
+  text-align: center;
 }
 
 .name
 {
+  text-align: left;
+  flex-basis: 85%;
   color: white;
-  padding: 0rem 0rem 0.3rem 0.3rem;
 }
 
 .linkedin .icon
@@ -229,6 +240,124 @@ img
   padding-left: 0.7rem;
   transition: 0.5s ease;
 }
+
+/* onclick-Downslider */
+
+.Downslider
+{
+  display: none;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2.5%;
+}
+
+.Downslider .header-ds h3
+{
+  font-size: 1rem;
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
+  margin: 0;
+}
+
+.Downslider .header-ds p
+{
+  padding: 4% 0.5%;
+  text-align: justify;
+  padding-bottom: 20%;
+}
+
+.Downslider h1
+{
+  color: #4acfbf;
+  margin: 0;
+}
+
+.blocks-ds
+{
+  visibility: visible;
+  border: 4px double white;
+  text-align: center;
+  padding: 5%;
+}
+
+.blocks-ds:hover
+{
+  box-shadow: 0px 0px 25px 0px #fefae0;
+  transition: 0.5s ease;
+}
+
+.blocks-ds h3
+{
+  color: white;
+  border-radius: 0;
+  background-color: transparent;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.a-ds
+{
+  position: relative;
+}
+
+.container-ds {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 0;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #1a535c;
+  color: white;
+  position: absolute;
+  box-shadow: 0px 10px 10px -10px black;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+
+.icon-ds
+{
+  font-size: 2rem;
+  padding: 0.5rem 1.7rem;
+  border-radius: 0 0 3rem 3rem;
+  border: 3px solid white;
+  border-top: 0px solid #1a535c;
+  color: white;
+  background-color: #1a535c;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-bottom: -3.3rem;
+  box-shadow: 0 10px 10px -10px black;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.container-slidedown
+{
+  height: 450px;
+  visibility: visible;
+  transition: 0.5s ease;
+}
+
+.icon-slidedown
+{
+  margin-top: 450px;
+  transition: 0.5s ease;
+}
+
+.container-ds:hover .blocks-ds
+{
+  visibility: visible;
+  transition: 0.5s ease;
+}
+
 
 
 /* left-bar interests */
@@ -252,6 +381,12 @@ img
   border-radius: 8px;
 }
 
+.main-block .title
+{
+  font-size: 1.47rem;
+  margin-bottom: 2.5rem;
+}
+
 .main-block p
 {
   margin: 0.3rem;
@@ -268,6 +403,7 @@ img
 .intro h3
 {
   font-weight: 500;
+  margin: 0.7rem 0rem 2rem;
 }
 
 .intro p
@@ -292,11 +428,6 @@ img
   border-bottom: 1.2px solid #2a9d8f;
 }
 
-.prof-skills h2
-{
-  margin-bottom: 2rem;
-}
-
 .prof-skills h3
 {
   margin-bottom: 1.7rem;
@@ -305,6 +436,12 @@ img
 .ps
 {
   display: flex;
+}
+
+.ps h3
+{
+  font-style: italic;
+  font-size: 1.23rem;
 }
 
 .pl, .others
@@ -323,7 +460,6 @@ img
 
 /* main-block work-exp  */
 /* main-block edu-quali  */
-
 
 .engi, .inter, .school
 {
@@ -393,34 +529,185 @@ img
 
 /* Media Quries  */
 
-@media screen and (max-width: 1400px)
+@media screen and (max-width: 2000px) and (min-width: 1540px)
+{
+  .personal-details.blocks
+  {
+    margin-top: 5rem;
+  }
+
+  .left-bar
+  {
+    width: 40%;
+  }
+
+  .left-bar .blocks
+  {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 1539px)
+{
+
+  .left-bar .blocks
+  {
+    border: 4px double white;
+    padding: 1.7rem 0.5rem;
+  }
+
+  .left-bar p
+  {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .left-bar .icon
+  {
+    font-size: 1rem;
+  }
+
+  .left-bar .i-center
+  {
+    padding-top: 0.27rem;
+  }
+
+  .left-bar .name
+  {
+    padding: 0.2rem;
+  }
+
+  img
+  {
+    width: 170px;
+    margin: 1rem auto 1.3rem;
+    padding: 0.3rem;
+  }
+
+  /* main-block */
+
+  .intro h1
+  {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .intro h3
+  {
+    font-size: 1rem;
+    margin: 0.3rem 0rem 0rem;
+  }
+
+  .intro p
+  {
+    margin-top: 1rem;
+  }
+
+  .main-block
+  {
+    margin: 1.2rem auto 2.5rem;
+  }
+
+  .main-block .blocks
+  {
+    width: 90%;
+    margin: 1.3rem auto;
+    padding: 2.3rem;
+  }
+
+  .main-block .title
+  {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .main-block p
+  {
+    font-size: 14px;
+  }
+
+  .ps h3
+  {
+    font-size: 1rem;
+  }
+
+  .edu-quali h3
+  {
+    font-size: 0.93rem;
+  }
+
+  .my-projects h3
+  {
+    font-size: 0.93rem;
+  }
+
+  .content, .ps
+  {
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1539px) and (min-width: 1024px)
+{
+
+/* left-bar  */
+
+.left-bar
+{
+  width: 37%;
+}
+
+  .left-bar .blocks
+  {
+    width: 75%;
+    margin: 13rem auto;
+  }
+
+  .left-bar .blocks:first-child
+  {
+    margin-top: 7.5rem;
+  }
+
+  .left-bar h3
+  {
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+    margin: 0.7rem;
+  }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px)
+{
+
+  .left-bar
+  {
+    width: 40%;
+  }
+
+  .left-bar .blocks
+  {
+    width: 85%;
+  }
+}
+
+
+@media screen and (max-width: 1023px)
 {
   body
   {
     display: block;
   }
 
-  .left-bar, .main-block
-  {
-    background-color: white;
-    margin: auto;
-  }
-
-/* left-bar  */
-
   .left-bar
   {
-    background-color: #1a535c;
     width: 100%;
-    display: flex;
-    padding: 2rem;
     box-shadow: 0px 10px 20px -10px black;
-  }
-
-  .left-bar .blocks
-  {
-    padding: 0.5rem;
-    margin: 1rem;
+    padding: 5%;
   }
 
   .interests, .languages
@@ -428,158 +715,11 @@ img
     display: none;
   }
 
-
-  /* left-bar personal-details */
-
   img
-  {
-    margin: auto;
-    order: 1;
-    width: 275px;
-  }
-
-  .personal-details
   {
     width: 30%;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    padding: 3rem 0rem;
+    margin: 2.5%;
   }
-
-  /* left-bar personal-details details */
-
-  .details
-  {
-    text-align: center;
-    margin: 0% 9%;
-    width: 5rem;
-  }
-
-  .details .name, .details h2
-  {
-    display: none;
-  }
-
-  .details p
-  {
-    display: inline-block;
-    padding-bottom: 0.5rem;
-
-  }
-
-  .details .icon
-  {
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: 3rem;
-  }
-
-  .details .name
-  {
-    padding: 0;
-    margin: 0;
-  }
-
-  /* left-bar personal-details a */
-
-  .a
-  {
-    display: flex;
-  }
-
-  /* main-block */
-
-  .main-block
-  {
-    width: 100%;
-  }
-
-  /* main-block intro */
-
-  .intro
-  {
-    display: none;
-  }
-}
-
-
-@media screen and (max-width: 1400px) and (min-width: 1080px)
-{
-
-/* left-bar  */
-
-  .left-bar .blocks
-  {
-    padding: 0.5rem;
-    margin: 1rem;
-  }
-
-  .interests, .languages
-  {
-    display: none;
-  }
-
-
-  /* left-bar personal-details */
-
-  img
-  {
-    margin: auto;
-    order: 1;
-    width: 275px;
-  }
-
-  /* left-bar personal-details details */
-
-  .details
-  {
-    text-align: center;
-    margin: 0%;
-    margin-right: 20%;
-    width: 5rem;
-  }
-
-  .details p
-  {
-    display: inline-block;
-    padding-bottom: 0.5rem;
-
-  }
-
-  .details .icon
-  {
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: 3rem;
-  }
-
-  .details .name
-  {
-    padding: 0;
-    margin: 0;
-  }
-
-  /* left-bar personal-details a */
-
-  .a
-  {
-    width: 43%;
-    height: 400px;
-    margin: 8rem 3rem 0rem 10%;
-  }
-
-    /* left-bar personal-details a b */
-
-    /* left-bar personal-details a b c */
-
-
-  /* left-bar interests */
-
-
-  /* left-bar languages */
-
-  /* main-block */
 
   .main-block
   {
@@ -589,72 +729,36 @@ img
 
   .main-block .blocks
   {
-    margin: 2rem 3rem;
+    margin: 1.5rem auto;
   }
 
-  /* main-block intro */
-
-  .intro
+  .main-block .intro
   {
     display: none;
   }
 
+  .details h3
+  {
+    display: none;
+  }
 
 }
 
 
-
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1023px) and (min-width: 768px)
 {
-  body
-  {
-    display: block;
-  }
-
-  .left-bar, .main-block
-  {
-    background-color: white;
-    margin: auto;
-  }
-
-/* left-bar  */
-
-  .left-bar
-  {
-    background-color: #1a535c;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    box-shadow: 0px 10px 20px -10px black;
-  }
 
   .left-bar .blocks
   {
-    padding: 0.5rem;
-    margin: 1rem;
+    margin: 5% auto;
+    padding: 2.5%;
   }
 
-  .interests, .languages
+  .left-bar .personal-details
   {
-    display: none;
-  }
-
-
-  /* left-bar personal-details */
-
-  img
-  {
-    margin: auto;
-    margin-left: 4rem;
-    order: 1;
-    width: 225px;
-  }
-
-  .personal-details
-  {
-    width: 90%;
-    margin: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
   }
 
   /* left-bar personal-details details */
@@ -663,9 +767,8 @@ img
   {
     display: flex;
     order: 2;
-    margin-left: 1.4rem;
-    width: 100%;
-    padding: 1rem;
+    width: 60%;
+    margin: 2.5%;
     flex-direction: column;
   }
 
@@ -675,11 +778,6 @@ img
     display: block;
   }
 
-  .details h2
-  {
-    display: none;
-  }
-
   .details p
   {
     display: flex;
@@ -691,69 +789,152 @@ img
   .details .icon
   {
     display: inline-block;
-    font-size: 1.3rem;
     padding: 0;
     margin: 0 7px;
   }
-
 
   /* left-bar personal-details a */
 
   .a
   {
-    width: 90%;
-    height: 330px;
-    margin: 0rem auto 10%;
+    display: flex;
+  }
+
+  .c .blocks
+  {
+    justify-content: space-between;
+    width: 37%;
   }
 
 
-    /* left-bar personal-details a b */
-
-    /* left-bar personal-details a b c */
-
-    .c
-    {
-      align-items: center;
-    }
-
-    .c h3
-    {
-      font-size: 1rem;
-    }
-
-    .c p
-    {
-      font-size: 12px;
-    }
-
-    .c .interests1
-    {
-      padding-right: 5rem;
-      border-right: 3px solid #a2a4c3;
-    }
-
-    .c .languages1
-    {
-      padding-left: 5rem;
-    }
-
-  /* left-bar interests */
+}
 
 
-  /* left-bar languages */
-
-  /* main-block */
-
-  .main-block
+@media screen and (max-width: 767px)
+{
+  .left-bar
   {
-    margin-top: 4rem;
+    padding-bottom: 0;
+  }
+
+
+  img
+  {
+    width: 50%;
+    margin: 5% auto;
+
+  }
+
+  .personal-details.blocks
+  {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .details p .name
+  {
+    text-align: right;
+  }
+
+  .Downslider
+  {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .ps
+  {
+    flex-direction: column;
+  }
+
+  .pl, .others
+  {
+    padding-bottom: 5%;
+    border: 0;
+    width: 90%;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 419px)
+{
+
+  .left-bar .blocks
+  {
+    padding: 5% 0;
+  }
+
+  .header-ds h1
+  {
+    font-size: 1.2rem;
+  }
+
+  .Downslider .header-ds h3
+  {
+    font-size: 0.7rem;
+    padding: 0;
+    padding-top: 1.3%;
+  }
+
+  .blocks-ds h3
+  {
+    font-size: 1rem;
+  }
+
+  .icon-ds
+  {
+    font-size: 1.3rem;
+    padding: 3% 7%;
+  }
+
+  .left-bar p, .main-block p
+  {
+    font-size: 11px;
+  }
+
+  img
+  {
+    width: 60%;
+
+  }
+
+  .personal-details.blocks
+  {
+    width: 95%;
+    margin-bottom:0;
+  }
+
+  .details p
+  {
+    flex-direction: column;
+  }
+
+  .details p .name
+  {
+    text-align: center;
+  }
+
+  .main-block .title
+  {
+    font-size: 1rem;
   }
 
   .main-block .blocks
   {
-    margin: 1.5rem 2rem;
+    padding: 1rem;
   }
 
-  /* main-block intro */
+  .ps h3
+  {
+    font-size: 0.8rem;
+    margin-bottom: 8%;
+  }
+
+  .edu-quali h3, .my-projects h3
+  {
+    font-size: 0.73rem;
+  }
+
 
 }
