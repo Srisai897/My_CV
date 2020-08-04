@@ -199,6 +199,39 @@ img
         z-index: 3;
       }
 
+      /* ************* Tooltip for medium screens ****************** */
+
+
+.tooltip .tooltiptext {
+  visibility: visible;
+  width: 125px;
+  background-color: #000000bd;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 2px;
+  position: absolute;
+  z-index: 5;
+  bottom: 66%;
+  left: 0;
+  margin-left: -67.5px;
+  box-shadow: 0px 0px 10px 0px white;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: hidden;
+}
+
 
 
 /* left-bar personal-details details */
@@ -356,6 +389,38 @@ img
 {
   visibility: visible;
   transition: 0.5s ease;
+}
+
+/* ********************** tooltip for small screens *************8 */
+
+.tooltip .tooltiptext1 {
+  font-size: 90%;
+  visibility: visible;
+  width: 20%;
+  background-color: #000000bd;;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1% 0.5%;
+  position: absolute;
+  z-index: 5;
+  top: 13px;
+  left: 60%;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.tooltip .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext1 {
+  visibility: hidden;
 }
 
 
@@ -883,6 +948,11 @@ img
   {
     font-size: 1.3rem;
     padding: 3% 7%;
+  }
+
+  .tooltip .tooltiptext1
+  {
+    font-size: 70%;
   }
 
   .left-bar p, .main-block p
