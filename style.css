@@ -591,7 +591,7 @@ img
 
 /* Media Quries  */
 
-@media screen and (max-width: 2000px) and (min-width: 1540px)
+@media screen and (max-width: 2000px) and (min-width: 1539px)
 {
   .personal-details.blocks
   {
@@ -713,7 +713,7 @@ img
 }
 
 
-@media screen and (max-width: 1539px) and (min-width: 1024px)
+@media screen and (max-width: 1539px) and (min-width: 1023px)
 {
 
 /* left-bar  */
@@ -743,7 +743,7 @@ img
 
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px)
+@media screen and (max-width: 1200px) and (min-width: 1023px)
 {
 
   .left-bar
@@ -807,7 +807,7 @@ img
 }
 
 
-@media screen and (max-width: 1023px) and (min-width: 768px)
+@media screen and (max-width: 1023px) and (min-width: 767px)
 {
 
   .left-bar .blocks
