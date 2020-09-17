@@ -64,7 +64,7 @@ a
 
 .left-bar .blocks:hover
 {
-    box-shadow: 0px 0px 25px 0px #fefae0;
+    box-shadow: 0px 0px 25px 0px rgba(254, 250, 224, 0.87);
     transition: 0.5s ease;
 }
 
@@ -316,7 +316,7 @@ img
 
 .blocks-ds:hover
 {
-  box-shadow: 0px 0px 25px 0px #fefae0;
+  box-shadow: 0px 0px 25px 0px rgba(254, 250, 224, 0.87);
   transition: 0.5s ease;
 }
 
